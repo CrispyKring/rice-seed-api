@@ -17,3 +17,5 @@ composer install --no-dev --optimize-autoloader
 php artisan key:generate --force
 php artisan config:cache
 php artisan route:cache
+# After composer install
+php artisan migrate --force --no-interaction
